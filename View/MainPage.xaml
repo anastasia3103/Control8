@@ -1,0 +1,28 @@
+﻿<Page x:Class="Control8.View.Page.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Control8.View.Page"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="550"
+      Title="MainPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Image Source="/Resource/IMG_20190124_182913.jpg" Stretch="Fill" />
+        <Image Source="/Resource/IMG_5299.JPG" Grid.Column="1" Stretch="Fill" />
+        <Image Source="/Resource/IMG_8699.JPG" Grid.Column="1" Grid.Row="1" Stretch="Fill"/>
+        <Image Source="/Resource/Статья 1,2.JPG" Grid.Row="1" Stretch="Fill" />
+
+
+
+    </Grid>
+</Page>
