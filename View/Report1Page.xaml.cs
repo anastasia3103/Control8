@@ -24,5 +24,10 @@ namespace Control8.View
         {
             InitializeComponent();
         }
+
+        private void AddReport_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
