@@ -9,6 +9,16 @@
       Title="PageMenu">
 
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF15C3DA" Offset="1"/>
+                <GradientStop Color="#FFCAB5F1" Offset="0"/>
+                <GradientStop Color="#FF36C0DE" Offset="0.813"/>
+                <GradientStop Color="#FF39BFDE" Offset="0.917"/>
+                <GradientStop Color="#FFBAB6EE" Offset="0.087"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <StackPanel Margin="10">
             <TextBlock FontSize="20">
                 <Hyperlink Name="AddGroupHL" Click="AddGroupHL_Click" >

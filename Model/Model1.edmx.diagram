@@ -5,15 +5,16 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="189d2b6f92e64d6391c94e5318727d75" Name="Diagram1">
-        <EntityTypeShape EntityType="Musatova.ActivityStudentsModel.Activity" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="Musatova.ActivityStudentsModel.Direction" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="Musatova.ActivityStudentsModel.Group" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="Musatova.ActivityStudentsModel.Journal" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="Musatova.ActivityStudentsModel.Spesial" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
-        <AssociationConnector Association="Musatova.ActivityStudentsModel.FK_Activity_Direction" ManuallyRouted="false" />
-        <AssociationConnector Association="Musatova.ActivityStudentsModel.FK_Journal_Activity" ManuallyRouted="false" />
-        <AssociationConnector Association="Musatova.ActivityStudentsModel.FK_Group_Spesial" ManuallyRouted="false" />
-        <AssociationConnector Association="Musatova.ActivityStudentsModel.FK_Journal_Group" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Musatova.ActivityStudentsModel.Activity" Width="1.5" PointX="3" PointY="5.125" />
+        <EntityTypeShape EntityType="Musatova.ActivityStudentsModel.Direction" Width="1.5" PointX="0.75" PointY="5.375" />
+        <EntityTypeShape EntityType="Musatova.ActivityStudentsModel.Group" Width="1.5" PointX="3" PointY="1.125" />
+        <EntityTypeShape EntityType="Musatova.ActivityStudentsModel.Journal" Width="1.5" PointX="5.25" PointY="1" />
+        <EntityTypeShape EntityType="Musatova.ActivityStudentsModel.Spesial" Width="1.5" PointX="0.75" PointY="1.375" />
+        <EntityTypeShape EntityType="Musatova.ActivityStudentsModel.View_1" Width="1.5" PointX="8.25" PointY="3.5" />
+        <AssociationConnector Association="Musatova.ActivityStudentsModel.FK_Activity_Direction" />
+        <AssociationConnector Association="Musatova.ActivityStudentsModel.FK_Journal_Activity" />
+        <AssociationConnector Association="Musatova.ActivityStudentsModel.FK_Group_Spesial" />
+        <AssociationConnector Association="Musatova.ActivityStudentsModel.FK_Journal_Group" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

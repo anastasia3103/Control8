@@ -30,5 +30,6 @@ namespace Control8.Model
         public DbSet<Group> Group { get; set; }
         public DbSet<Journal> Journal { get; set; }
         public DbSet<Spesial> Spesial { get; set; }
+        public DbSet<View_1> View_1 { get; set; }
     }
 }

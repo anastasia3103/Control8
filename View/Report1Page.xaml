@@ -36,7 +36,7 @@
 
         </DataGrid>
 
-        <Button Name="AddReport" Width="200" Height="50" Grid.Column="2" Grid.Row="5"
-                Content="Сформировать отчет" FontSize="15" Click="AddReport_Click" />
+        <Button Name="AddReport" Width="200" Grid.Column="2" Grid.Row="3"
+                Content="Сформировать отчет" FontSize="15" Click="AddReport_Click_1"  Margin="25,10,25,75" />
     </Grid>
 </Page>

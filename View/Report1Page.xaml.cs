@@ -29,5 +29,30 @@ namespace Control8.View
         {
 
         }
+
+        private void AddReport_Click_1(object sender, RoutedEventArgs e)
+        {
+            string mes = "";
+            if (string.IsNullOrWhiteSpace(StartDateDP.Text))
+                mes += "Выберите начало периода\n";
+            if (string.IsNullOrWhiteSpace(EndDateDP.Text))
+                mes += "Выберите конец периода\n";
+            if (mes != "")
+            {
+                MessageBox.Show(mes);
+                mes = "";
+                return;
+            }
+            var a = (DateTime)StartDateDP.SelectedDate;
+            var b = (DateTime)EndDateDP.SelectedDate;
+
+            var qwery = App.context.View_1
+                .Where(x => x.DateEvent >= a && x.DateEvent < b)
+                .GroupBy(y => y.Name)
+                .Select(g => new { Группа = g.Key, Оценки = g.Sum(s => s.Mark) })
+                .OrderBy(n => n.Группа);
+
+            PeriodDg.ItemsSource = qwery.ToList();
+        }
     }
 }

@@ -44,13 +44,13 @@ namespace Control8.View.Page
 
         private void Report2_Click(object sender, RoutedEventArgs e)
         {
-            ClassFrame.FrameBody.Navigate(new View.Report1Page());
+            ClassFrame.FrameBody.Navigate(new View.Report2Page());
 
         }
 
         private void Report_Click(object sender, RoutedEventArgs e)
         {
-            ClassFrame.FrameBody.Navigate(new View.Report2Page());
+            ClassFrame.FrameBody.Navigate(new View.Report1Page());
         }
     }
 }

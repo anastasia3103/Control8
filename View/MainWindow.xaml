@@ -12,7 +12,14 @@
             <ColumnDefinition Width="1*" />
         </Grid.ColumnDefinitions>
 
-        <Frame Grid.Column="1" Name="FrameBody" NavigationUIVisibility="Hidden"/>
+        <Frame Grid.Column="1" Name="FrameBody" NavigationUIVisibility="Hidden">
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFC7E7FB"/>
+                    <GradientStop Color="#FFD7B5FB" Offset="1"/>
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
         <Frame Name="FrameMenu" NavigationUIVisibility="Hidden"/>
 
     </Grid>
