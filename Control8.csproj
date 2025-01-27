@@ -71,6 +71,9 @@
     <Compile Include="View\Report2Page.xaml.cs">
       <DependentUpon>Report2Page.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Report2_1Page.xaml.cs">
+      <DependentUpon>Report2_1Page.xaml</DependentUpon>
+    </Compile>
     <Page Include="View\AccountingPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -154,6 +157,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Report2Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Report2_1Page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

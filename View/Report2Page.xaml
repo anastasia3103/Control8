@@ -9,7 +9,32 @@
 
       Title="Report2Page">
 
-    <Grid>
-        
+    <Grid Margin="20">
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="180" Text="Выберите специальность:"/>
+            <ComboBox Width="250" Height="20" Name ="SpecialCmb"/>
+            <Button Content="Поиск" Width="70" Name="SearchBtn" Click="SearchBtn_Click"/>
+        </StackPanel>
+           
+
+        <DataGrid AutoGenerateColumns="False" Name="DataGridInfo" Height="500"
+                  VerticalAlignment="Top" Width="450" Margin="75"
+                  CanUserAddRows="False" CanUserDeleteRows="False" 
+                  SelectionChanged="DataGridInfo_SelectionChanged">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Группа" Binding="{Binding Name}" Width="200"/>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Баллы" Name="MarkBtn"
+                                        Click="MarkBtn_Click"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            
+        </DataGrid>
+        </StackPanel>
     </Grid>
 </Page>
